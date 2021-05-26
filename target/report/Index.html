@@ -1,0 +1,1425 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c952cc003431b643d7a73337421ff42b75bac784/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">cucumber Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 25, 2021 06:55:34 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 25, 2021 06:55:34 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 25, 2021 06:56:21 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='66%'>
+<b>4</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='33%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'><b>12</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='20%'><b>3</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='92%'><b>72</b> steps passed</small></div>
+<div>
+<small data-tooltip='3%'><b>3</b> steps failed,
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Postive flow scenarios":10.312,"File 1 scenarios":8.104,"File 2 scenarios":5.126,"File 3 scenarios":3.377,"File 4 scenarios":5.34,"validating place API's":13.538
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Special</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Reg</td>
+<td>4</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>57.143%</td>
+</tr>
+<tr>
+<td>@Smoke</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Sanity</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>build</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>user</td>
+<td>Dileep</td>
+</tr>
+<tr>
+<td>AppName</td>
+<td>AutomationPractice</td>
+</tr>
+<tr>
+<td>Framework</td>
+<td>BDD Cucumber</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 12,
+failChild: 3,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 72,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 3,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Special</a><a class="dropdown-item" href="#">@Reg</a><a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Sanity</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Postive flow scenarios</p>
+            <p class="text-sm">
+              <span>18:55:35 PM</span> / <span>00:00:10:312</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Postive flow scenarios</h5>
+<span class='badge badge-success'>05.25.2021 18:55:35</span>
+<span class='badge badge-danger'>05.25.2021 18:55:45</span>
+<span class='badge badge-default'>00:00:10:312</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify validation if place is being successfully added by using AddPlaceAPI</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.add_place_payload_with(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Given Add place payload with "BBhouse" "Spanish" "Sea cross center"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.user_call_with_Http_request(java.lang.String,java.lang.String)">
+                <span>When user call "AddPlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.the_api_got_sucess_with_statu_code(java.lang.Integer)">
+                <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "status" in response body is "OK"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "scope" in response body is "APP"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.verify_place_id_created_in_maps_to_using(java.lang.String,java.lang.String)">
+                <span>And verify place_id created in maps to "BBhouse" using "getPlaceAPI"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Verify validation if Delete Place functionality is working</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.deleteplace_Payload()">
+                <span>Given DeletePlace Payload</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.user_call_with_Http_request(java.lang.String,java.lang.String)">
+                <span>When user call "deletePlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.the_api_got_sucess_with_statu_code(java.lang.Integer)">
+                <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "status" in response body is "OK"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">File 1 scenarios</p>
+            <p class="text-sm">
+              <span>18:55:45 PM</span> / <span>00:00:08:104</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">File 1 scenarios</h5>
+<span class='badge badge-success'>05.25.2021 18:55:45</span>
+<span class='badge badge-danger'>05.25.2021 18:55:53</span>
+<span class='badge badge-default'>00:00:08:104</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>File 1 Verify validation if place is being successfully added by using AddPlaceAPI</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.add_place_payload_with(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Given Add place payload with "BBhouse" "Spanish" "Sea cross center"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.user_call_with_Http_request(java.lang.String,java.lang.String)">
+                <span>When user call "AddPlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.the_api_got_sucess_with_statu_code(java.lang.Integer)">
+                <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "status" in response body is "OK"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "scope" in response body is "APP"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.verify_place_id_created_in_maps_to_using(java.lang.String,java.lang.String)">
+                <span>And verify place_id created in maps to "BBhouse" using "getPlaceAPI"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>File 1 Verify validation if Delete Place functionality is working</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.deleteplace_Payload()">
+                <span>Given DeletePlace Payload</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.user_call_with_Http_request(java.lang.String,java.lang.String)">
+                <span>When user call "deletePlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.the_api_got_sucess_with_statu_code(java.lang.Integer)">
+                <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "status" in response body is "OK"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">File 2 scenarios</p>
+            <p class="text-sm">
+              <span>18:55:53 PM</span> / <span>00:00:05:126</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">File 2 scenarios</h5>
+<span class='badge badge-success'>05.25.2021 18:55:53</span>
+<span class='badge badge-danger'>05.25.2021 18:55:58</span>
+<span class='badge badge-default'>00:00:05:126</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>File 2 Verify validation if place is being successfully added by using AddPlaceAPI</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.add_place_payload_with(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Given Add place payload with "BBhouse" "Spanish" "Sea cross center"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.user_call_with_Http_request(java.lang.String,java.lang.String)">
+                <span>When user call "AddPlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.the_api_got_sucess_with_statu_code(java.lang.Integer)">
+                <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "status" in response body is "OK"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "scope" in response body is "APP"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.verify_place_id_created_in_maps_to_using(java.lang.String,java.lang.String)">
+                <span>And verify place_id created in maps to "BBhouse" using "getPlaceAPI"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>File 2 Verify validation if Delete Place functionality is working</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.deleteplace_Payload()">
+                <span>Given DeletePlace Payload</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.user_call_with_Http_request(java.lang.String,java.lang.String)">
+                <span>When user call "deletePlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.the_api_got_sucess_with_statu_code(java.lang.Integer)">
+                <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "status" in response body is "OK"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="40"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">File 3 scenarios</p>
+            <p class="text-sm">
+              <span>18:55:58 PM</span> / <span>00:00:03:377</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">File 3 scenarios</h5>
+<span class='badge badge-success'>05.25.2021 18:55:58</span>
+<span class='badge badge-danger'>05.25.2021 18:56:02</span>
+<span class='badge badge-default'>00:00:03:377</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=40</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="41"><span class="badge log fail-bg mr-2">Fail</span>File 3 Verify validation if place is being successfully added by using AddPlaceAPI</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.add_place_payload_with(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Given Add place payload with "BBhouse" "Spanish" "Sea cross center"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.user_call_with_Http_request(java.lang.String,java.lang.String)">
+                <span>When user call "AddPlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.the_api_got_sucess_with_statu_code(java.lang.Integer)">
+                <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "status" in response body is "OK1"</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<OK[]> but was:<OK[1]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.StepDefinition.in_response_body_is(StepDefinition.java:62)
+	at ?."status" in response body is "OK1"(file:///C:/Users/dileep.kumar/eclipse-workspace/PracticeProject/ApiAutomation/APICucumber/src/test/java/features/file3.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "scope" in response body is "APP"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.StepDefinition.verify_place_id_created_in_maps_to_using(java.lang.String,java.lang.String)">
+                <span>And verify place_id created in maps to "BBhouse" using "getPlaceAPI"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="48"><span class="badge log fail-bg mr-2">Fail</span>File 3 Verify validation if Delete Place functionality is working</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.deleteplace_Payload()">
+                <span>Given DeletePlace Payload</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.user_call_with_Http_request(java.lang.String,java.lang.String)">
+                <span>When user call "deletePlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.StepDefinition.the_api_got_sucess_with_statu_code(java.lang.Integer)">
+                <span>Then the api got sucess with statu code 200</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected:<404> but was:<200>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepDefinitions.StepDefinition.the_api_got_sucess_with_statu_code(StepDefinition.java:55)
+	at ?.the api got sucess with statu code 200(file:///C:/Users/dileep.kumar/eclipse-workspace/PracticeProject/ApiAutomation/APICucumber/src/test/java/features/file3.feature:19)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "status" in response body is "OK"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="53"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">File 4 scenarios</p>
+            <p class="text-sm">
+              <span>18:56:02 PM</span> / <span>00:00:05:340</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">File 4 scenarios</h5>
+<span class='badge badge-success'>05.25.2021 18:56:02</span>
+<span class='badge badge-danger'>05.25.2021 18:56:07</span>
+<span class='badge badge-default'>00:00:05:340</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=53</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="54"><span class="badge log pass-bg mr-2">Pass</span>File 4 Verify validation if place is being successfully added by using AddPlaceAPI</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.add_place_payload_with(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Given Add place payload with "BBhouse" "Spanish" "Sea cross center"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.user_call_with_Http_request(java.lang.String,java.lang.String)">
+                <span>When user call "AddPlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.the_api_got_sucess_with_statu_code(java.lang.Integer)">
+                <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "status" in response body is "OK"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "scope" in response body is "APP"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.verify_place_id_created_in_maps_to_using(java.lang.String,java.lang.String)">
+                <span>And verify place_id created in maps to "BBhouse" using "getPlaceAPI"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="61"><span class="badge log pass-bg mr-2">Pass</span>File 4 Verify validation if Delete Place functionality is working</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.deleteplace_Payload()">
+                <span>Given DeletePlace Payload</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.user_call_with_Http_request(java.lang.String,java.lang.String)">
+                <span>When user call "deletePlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.the_api_got_sucess_with_statu_code(java.lang.Integer)">
+                <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "status" in response body is "OK"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="66"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">validating place API's</p>
+            <p class="text-sm">
+              <span>18:56:07 PM</span> / <span>00:00:13:538</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">validating place API's</h5>
+<span class='badge badge-success'>05.25.2021 18:56:07</span>
+<span class='badge badge-danger'>05.25.2021 18:56:20</span>
+<span class='badge badge-default'>00:00:13:538</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=66</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="67"><span class="badge log pass-bg mr-2">Pass</span>Verify if place is being successfully added by using AddPlaceAPI</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="68"><span class="badge log pass-bg mr-2">Pass</span>Verify if place is being successfully added by using AddPlaceAPI</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Add place payload with "Dileephouse" "English" "World cross center"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user call "AddPlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And "status" in response body is "OK"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And "scope" in response body is "APP"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And verify place_id created in maps to "Dileephouse" using "getPlaceAPI"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="75"><span class="badge log pass-bg mr-2">Pass</span>Verify if place is being successfully added by using AddPlaceAPI</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Add place payload with "BBhouse" "Spanish" "Sea cross center"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user call "AddPlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And "status" in response body is "OK"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And "scope" in response body is "APP"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And verify place_id created in maps to "BBhouse" using "getPlaceAPI"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="82"><span class="badge log pass-bg mr-2">Pass</span>Verify if place is being successfully added by using AddPlaceAPI</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Add place payload with "BBhouse1" "Spanish1" "Sea cross center1"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user call "AddPlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And "status" in response body is "OK"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And "scope" in response body is "APP"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And verify place_id created in maps to "BBhouse1" using "getPlaceAPI"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>Verify if place is being successfully added by using AddPlaceAPI</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Add place payload with "BBhouse2" "Spanish2" "Sea cross center2"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user call "AddPlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And "status" in response body is "OK"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And "scope" in response body is "APP"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And verify place_id created in maps to "BBhouse2" using "getPlaceAPI"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="96"><span class="badge log fail-bg mr-2">Fail</span>Verify if Delete Place functionality is working</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.deleteplace_Payload()">
+                <span>Given DeletePlace Payload</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.user_call_with_Http_request(java.lang.String,java.lang.String)">
+                <span>When user call "deletePlaceAPI" with "Post" Http request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.StepDefinition.the_api_got_sucess_with_statu_code(java.lang.Integer)">
+                <span>Then the api got sucess with statu code 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)">
+                <span>And "status" in response body is "OK1"</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<OK[]> but was:<OK[1]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.StepDefinition.in_response_body_is(StepDefinition.java:62)
+	at ?."status" in response body is "OK1"(file:///C:/Users/dileep.kumar/eclipse-workspace/PracticeProject/ApiAutomation/APICucumber/src/test/java/features/placeValidations.feature:25)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@Special</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Special</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:56:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='66' id='68'>Verify if place is being successfully added by using AddPlaceAPI</a>
+<div class="">
+<span class="badge badge-default">validating place API's.Verify if place is being successfully added by using AddPlaceAPI</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:56:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='66' id='75'>Verify if place is being successfully added by using AddPlaceAPI</a>
+<div class="">
+<span class="badge badge-default">validating place API's.Verify if place is being successfully added by using AddPlaceAPI</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:56:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='66' id='82'>Verify if place is being successfully added by using AddPlaceAPI</a>
+<div class="">
+<span class="badge badge-default">validating place API's.Verify if place is being successfully added by using AddPlaceAPI</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:56:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='66' id='89'>Verify if place is being successfully added by using AddPlaceAPI</a>
+<div class="">
+<span class="badge badge-default">validating place API's.Verify if place is being successfully added by using AddPlaceAPI</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@Reg</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Reg</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:55:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify validation if place is being successfully added by using AddPlaceAPI</a>
+<div class="">
+<span class="badge badge-default">Postive flow scenarios.Verify validation if place is being successfully added by using AddPlaceAPI</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:55:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Verify validation if Delete Place functionality is working</a>
+<div class="">
+<span class="badge badge-default">Postive flow scenarios.Verify validation if Delete Place functionality is working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:55:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='15'>File 1 Verify validation if place is being successfully added by using AddPlaceAPI</a>
+<div class="">
+<span class="badge badge-default">File 1 scenarios.File 1 Verify validation if place is being successfully added by using AddPlaceAPI</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:55:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='22'>File 1 Verify validation if Delete Place functionality is working</a>
+<div class="">
+<span class="badge badge-default">File 1 scenarios.File 1 Verify validation if Delete Place functionality is working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:55:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='40' id='41'>File 3 Verify validation if place is being successfully added by using AddPlaceAPI</a>
+<div class="">
+<span class="badge badge-default">File 3 scenarios.File 3 Verify validation if place is being successfully added by using AddPlaceAPI</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:55:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='40' id='48'>File 3 Verify validation if Delete Place functionality is working</a>
+<div class="">
+<span class="badge badge-default">File 3 scenarios.File 3 Verify validation if Delete Place functionality is working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:56:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='66' id='96'>Verify if Delete Place functionality is working</a>
+<div class="">
+<span class="badge badge-default">validating place API's.Verify if Delete Place functionality is working</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:55:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='28'>File 2 Verify validation if place is being successfully added by using AddPlaceAPI</a>
+<div class="">
+<span class="badge badge-default">File 2 scenarios.File 2 Verify validation if place is being successfully added by using AddPlaceAPI</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:56:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='53' id='54'>File 4 Verify validation if place is being successfully added by using AddPlaceAPI</a>
+<div class="">
+<span class="badge badge-default">File 4 scenarios.File 4 Verify validation if place is being successfully added by using AddPlaceAPI</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Sanity</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Sanity</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:55:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='35'>File 2 Verify validation if Delete Place functionality is working</a>
+<div class="">
+<span class="badge badge-default">File 2 scenarios.File 2 Verify validation if Delete Place functionality is working</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:56:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='53' id='61'>File 4 Verify validation if Delete Place functionality is working</a>
+<div class="">
+<span class="badge badge-default">File 4 scenarios.File 4 Verify validation if Delete Place functionality is working</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:56:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='40' id='51'>Then the api got sucess with statu code 200</a>
+<div class="">
+<span class="badge badge-default">File 3 scenarios.File 3 Verify validation if Delete Place functionality is working.Then the api got sucess with statu code 200</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.junit.ComparisonFailure</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.junit.ComparisonFailure</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:55:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='40' id='45'>And "status" in response body is "OK1"</a>
+<div class="">
+<span class="badge badge-default">File 3 scenarios.File 3 Verify validation if place is being successfully added by using AddPlaceAPI.And "status" in response body is "OK1"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:56:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='66' id='100'>And "status" in response body is "OK1"</a>
+<div class="">
+<span class="badge badge-default">validating place API's.Verify if Delete Place functionality is working.And "status" in response body is "OK1"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
